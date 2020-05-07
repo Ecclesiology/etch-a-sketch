@@ -1,10 +1,9 @@
 const gridContainer = document.querySelector(".gridContainer")
 
-const rows = document.createElement("div");
-  rows.classList.add("Rows");
-  gridContainer.appendChild(rows);
-  
-const columns = document.createElement("div");
-  columns.classList.add("Columns");
-  gridContainer.appendChild(columns);
+
+  for(x=0; x<256; x++) {
+      const block = document.createElement("div");
+        block.classList.add("blocks");
+        gridContainer.appendChild(block);
+  }
   
